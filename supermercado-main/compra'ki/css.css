@@ -1,0 +1,138 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos do final da pagina */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+/* Estilo dos produtos */
+#produtos {
+    margin: 20px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para o slideshow */
+#slideshow {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+/* Estilos para o slideshow de ofertas */
+#ofertas {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Adicionamos overflow: hidden para esconder o conteúdo fora da área do contêiner */
+    position: relative; /* Adicionamos position: relative para posicionar os elementos absolutamente dentro dele */
+}
+
+.ofertas-container {
+    position: absolute; /* Mudamos para position: absolute para posicionarmos os slides verticalmente */
+    top: 0; /* Começamos do topo */
+    left: 0; /* Alinhamos à esquerda */
+    width: 100%; /* Estendemos pela largura completa */
+    height: 100%; /* Estendemos pela altura completa */
+    display: flex; /* Usamos display: flex para organizar os slides verticalmente */
+    flex-direction: column; /* Organizamos os slides verticalmente */
+    transition: top 0.5s ease; /* Adicionamos uma transição suave para o movimento vertical */
+}
+
+.oferta {
+    flex: 1; /* Fazemos os slides ocuparem todo o espaço disponível verticalmente */
+    display: none;
+}
+
+.oferta img {
+    max-width: 100%;
+    height: auto;
+}
+
+.oferta-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
