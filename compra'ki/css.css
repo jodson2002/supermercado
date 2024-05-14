@@ -1,0 +1,218 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos do final da pagina */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+/* Estilo dos produtos */
+#produtos {
+    margin: 20px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    border-radius: 10px;
+    background-color:#f8f9fa;
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para o slideshow */
+#slideshow {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/*cadastro*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+
+.box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+/*teste nav li */
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    /* Espaçamento entre os itens da barra de navegação */
+}
+
+nav ul li a {
+    color: #ffffff;
+    /* Cor do texto do link */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+}
+
+nav ul li a1{
+    color: #ffffff;
+    
+}
+
+nav ul li a1 img {
+    width:max-content;
+    /* Largura do ícone */
+    height: 40px;
+    /* Altura do ícone */
+    vertical-align: middle;
+    /* Alinha o ícone verticalmente com o texto */
+    margin-right: 10px;
+    /* Espaçamento entre o ícone e o texto */
+}
