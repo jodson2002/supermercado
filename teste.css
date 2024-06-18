@@ -1,0 +1,417 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+section.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 50%;
+}
+
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 34%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: #007bff;
+}
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #007bff;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Estilos do final da página */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo dos produtos */
+#produtos {
+    margin: 20px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    margin-top: 100px;
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do carrossel */
+.carousel {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS para ícone do carrinho flutuante */
+#floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#floating-cart img {
+    width: 40px;
+    height: 40px;
+}
+
+#floating-cart span {
+    margin-left: 5px;
+}
+
+/* Estilos para o slideshow */
+#slideshow {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para o slideshow de ofertas */
+#ofertas {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ofertas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: top 0.5s ease;
+}
+
+.oferta {
+    flex: 1;
+    display: none;
+}
+
+.oferta img {
+    max-width: 100%;
+    height: auto;
+}
+
+.oferta-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    #produtos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    header,
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .produto {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para o formulário de adicionar produto */
+#add-product {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#add-product form {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-product label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#add-product input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+#add-product button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#add-product button:hover {
+    background-color: #0056b3;
+}
+
+#remove-products-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#remove-products-button:hover {
+    background-color: #c82333;
+}
+
+section.slider {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.nav-manual,
+.nav-auto {
+    overflow: hidden;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    /*border:  1px solid #007bff;*/
+    border: 1px solid white;
+    padding: 1%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3 {
+    /*background-color: #007bff;*/
+    background-color: white;
+}
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #007bff;
+}
